@@ -97,6 +97,7 @@
 		A8E95F8322103A6400E2720B /* ZoloAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				A8E95FB222103A6A00E2720B /* Model */,
 				A8E95F8422103A6400E2720B /* AppDelegate.swift */,
 				A8E95F8622103A6400E2720B /* ViewController.swift */,
 				A8E95F8822103A6400E2720B /* Main.storyboard */,
@@ -123,6 +124,13 @@
 				A8E95FA622103A6500E2720B /* Info.plist */,
 			);
 			path = ZoloAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		A8E95FB222103A6A00E2720B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
