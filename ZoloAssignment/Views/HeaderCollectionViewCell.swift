@@ -1,5 +1,5 @@
 //
-//  CollectionViewCell.swift
+//  HeaderCollectionViewCelll.swift
 //  ZoloAssignment
 //
 //  Created by Mayank on 10/02/19.
@@ -8,6 +8,8 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class HeaderCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var textLabel: UILabel!
     
 }
