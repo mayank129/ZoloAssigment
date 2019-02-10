@@ -160,6 +160,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="headerCollectionView" destination="lTo-vQ-zUX" id="hHR-Xg-kgj"/>
+                        <outlet property="primaryCollectionView" destination="FL5-lh-bK6" id="F6I-Q0-qQb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
