@@ -25,10 +25,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lTo-vQ-zUX">
-                                <rect key="frame" x="15" y="81" width="360" height="100"/>
+                                <rect key="frame" x="15" y="81" width="360" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="zpf-Fe-mXU"/>
+                                    <constraint firstAttribute="height" constant="120" id="zpf-Fe-mXU"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jzk-DH-TPa">
                                     <size key="itemSize" width="278" height="127"/>
@@ -37,8 +37,8 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="k6d-fL-bgw" customClass="HeaderCollectionViewCell" customModule="ZoloAssignment" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-13.5" width="278" height="127"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderCollectionViewCell" id="k6d-fL-bgw" customClass="HeaderCollectionViewCell" customModule="ZoloAssignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-3.5" width="278" height="127"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="278" height="127"/>
@@ -47,8 +47,8 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ART-Ur-6PB">
                                                     <rect key="frame" x="0.0" y="0.0" width="278" height="127"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nw-NM-CrM">
-                                                            <rect key="frame" x="118" y="53" width="42" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nw-NM-CrM">
+                                                            <rect key="frame" x="20" y="15" width="238" height="92"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -56,8 +56,10 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.84190146629999996" green="0.84190146629999996" blue="0.84190146629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="6Nw-NM-CrM" firstAttribute="centerY" secondItem="ART-Ur-6PB" secondAttribute="centerY" id="sJh-HZ-Ac6"/>
-                                                        <constraint firstItem="6Nw-NM-CrM" firstAttribute="centerX" secondItem="ART-Ur-6PB" secondAttribute="centerX" id="yCQ-rP-ImA"/>
+                                                        <constraint firstAttribute="trailing" secondItem="6Nw-NM-CrM" secondAttribute="trailing" constant="20" id="Ltt-7V-cjA"/>
+                                                        <constraint firstItem="6Nw-NM-CrM" firstAttribute="top" secondItem="ART-Ur-6PB" secondAttribute="top" constant="15" id="OaF-yg-lQH"/>
+                                                        <constraint firstItem="6Nw-NM-CrM" firstAttribute="leading" secondItem="ART-Ur-6PB" secondAttribute="leading" constant="20" id="bPD-2W-UfL"/>
+                                                        <constraint firstAttribute="bottom" secondItem="6Nw-NM-CrM" secondAttribute="bottom" constant="20" id="tGg-Gh-MYp"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -76,13 +78,13 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Data With Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzO-u1-eyD">
-                                <rect key="frame" x="15" y="211" width="345" height="21"/>
+                                <rect key="frame" x="15" y="231" width="345" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FL5-lh-bK6">
-                                <rect key="frame" x="15" y="252" width="360" height="390"/>
+                                <rect key="frame" x="15" y="272" width="360" height="370"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hoe-IY-pUj">
                                     <size key="itemSize" width="261" height="172"/>
@@ -91,7 +93,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ngY-No-4g8" customClass="PrimaryCollectionViewCell" customModule="ZoloAssignment" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PrimaryCollectionViewCell" id="ngY-No-4g8" customClass="PrimaryCollectionViewCell" customModule="ZoloAssignment" customModuleProvider="target">
                                         <rect key="frame" x="49.5" y="0.0" width="261" height="172"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

@@ -12,6 +12,7 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBOutlet weak var headerCollectionView: UICollectionView!
     @IBOutlet weak var primaryCollectionView: UICollectionView!
+    private var headerData = [DataModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +27,15 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .horizontal
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        layout.itemSize = CGSize(width: UIScreen.main.bounds.width*(4/3) , height: headerCollectionView.frame.size.height)
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width*(3/4) , height: headerCollectionView.frame.size.height)
         headerCollectionView.collectionViewLayout = layout
-        DataModel.getData(withUrl: "https://jsonplaceholder.typicode.com") { [weak self] data in
+        DataModel.getData(withUrl: "https://jsonplaceholder.typicode.com/todos") { [weak self] data in
             guard let strongSelf = self else {
                 return
+            }
+            strongSelf.headerData = data
+            DispatchQueue.main.async {
+                strongSelf.headerCollectionView.reloadData()
             }
         }
     }
@@ -52,11 +57,25 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        if collectionView == headerCollectionView {
+            return headerData.count
+        }
+        else {
+            return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        if collectionView == headerCollectionView {
+            let headerCell = headerCollectionView.dequeueReusableCell(withReuseIdentifier: "HeaderCollectionViewCell", for: indexPath) as! HeaderCollectionViewCell
+            if let text = headerData[indexPath.item].title {
+                headerCell.textLabel.text = text
+            }
+            return headerCell
+        }
+        else {
+            return UICollectionViewCell()
+        }
     }
     
 }
