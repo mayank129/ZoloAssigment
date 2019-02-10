@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8E95F8522103A6400E2720B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E95F8422103A6400E2720B /* AppDelegate.swift */; };
+		A8E95F8722103A6400E2720B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E95F8622103A6400E2720B /* ViewController.swift */; };
+		A8E95F8A22103A6400E2720B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E95F8822103A6400E2720B /* Main.storyboard */; };
+		A8E95F8C22103A6400E2720B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E95F8B22103A6400E2720B /* Assets.xcassets */; };
+		A8E95F8F22103A6400E2720B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E95F8D22103A6400E2720B /* LaunchScreen.storyboard */; };
+		A8E95F9A22103A6400E2720B /* ZoloAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E95F9922103A6400E2720B /* ZoloAssignmentTests.swift */; };
+		A8E95FA522103A6500E2720B /* ZoloAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E95FA422103A6500E2720B /* ZoloAssignmentUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8E95F9622103A6400E2720B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8E95F7922103A6400E2720B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8E95F8022103A6400E2720B;
+			remoteInfo = ZoloAssignment;
+		};
+		A8E95FA122103A6500E2720B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8E95F7922103A6400E2720B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8E95F8022103A6400E2720B;
+			remoteInfo = ZoloAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8E95F8122103A6400E2720B /* ZoloAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoloAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E95F8422103A6400E2720B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8E95F8622103A6400E2720B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8E95F8922103A6400E2720B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8E95F8B22103A6400E2720B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8E95F8E22103A6400E2720B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8E95F9022103A6400E2720B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E95F9522103A6400E2720B /* ZoloAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoloAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E95F9922103A6400E2720B /* ZoloAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoloAssignmentTests.swift; sourceTree = "<group>"; };
+		A8E95F9B22103A6400E2720B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E95FA022103A6500E2720B /* ZoloAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoloAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E95FA422103A6500E2720B /* ZoloAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoloAssignmentUITests.swift; sourceTree = "<group>"; };
+		A8E95FA622103A6500E2720B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8E95F7E22103A6400E2720B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E95F9222103A6400E2720B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E95F9D22103A6500E2720B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8E95F7822103A6400E2720B = {
+			isa = PBXGroup;
+			children = (
+				A8E95F8322103A6400E2720B /* ZoloAssignment */,
+				A8E95F9822103A6400E2720B /* ZoloAssignmentTests */,
+				A8E95FA322103A6500E2720B /* ZoloAssignmentUITests */,
+				A8E95F8222103A6400E2720B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8E95F8222103A6400E2720B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8E95F8122103A6400E2720B /* ZoloAssignment.app */,
+				A8E95F9522103A6400E2720B /* ZoloAssignmentTests.xctest */,
+				A8E95FA022103A6500E2720B /* ZoloAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8E95F8322103A6400E2720B /* ZoloAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				A8E95F8422103A6400E2720B /* AppDelegate.swift */,
+				A8E95F8622103A6400E2720B /* ViewController.swift */,
+				A8E95F8822103A6400E2720B /* Main.storyboard */,
+				A8E95F8B22103A6400E2720B /* Assets.xcassets */,
+				A8E95F8D22103A6400E2720B /* LaunchScreen.storyboard */,
+				A8E95F9022103A6400E2720B /* Info.plist */,
+			);
+			path = ZoloAssignment;
+			sourceTree = "<group>";
+		};
+		A8E95F9822103A6400E2720B /* ZoloAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8E95F9922103A6400E2720B /* ZoloAssignmentTests.swift */,
+				A8E95F9B22103A6400E2720B /* Info.plist */,
+			);
+			path = ZoloAssignmentTests;
+			sourceTree = "<group>";
+		};
+		A8E95FA322103A6500E2720B /* ZoloAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8E95FA422103A6500E2720B /* ZoloAssignmentUITests.swift */,
+				A8E95FA622103A6500E2720B /* Info.plist */,
+			);
+			path = ZoloAssignmentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8E95F8022103A6400E2720B /* ZoloAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E95FA922103A6500E2720B /* Build configuration list for PBXNativeTarget "ZoloAssignment" */;
+			buildPhases = (
+				A8E95F7D22103A6400E2720B /* Sources */,
+				A8E95F7E22103A6400E2720B /* Frameworks */,
+				A8E95F7F22103A6400E2720B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZoloAssignment;
+			productName = ZoloAssignment;
+			productReference = A8E95F8122103A6400E2720B /* ZoloAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8E95F9422103A6400E2720B /* ZoloAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E95FAC22103A6500E2720B /* Build configuration list for PBXNativeTarget "ZoloAssignmentTests" */;
+			buildPhases = (
+				A8E95F9122103A6400E2720B /* Sources */,
+				A8E95F9222103A6400E2720B /* Frameworks */,
+				A8E95F9322103A6400E2720B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8E95F9722103A6400E2720B /* PBXTargetDependency */,
+			);
+			name = ZoloAssignmentTests;
+			productName = ZoloAssignmentTests;
+			productReference = A8E95F9522103A6400E2720B /* ZoloAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8E95F9F22103A6500E2720B /* ZoloAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E95FAF22103A6500E2720B /* Build configuration list for PBXNativeTarget "ZoloAssignmentUITests" */;
+			buildPhases = (
+				A8E95F9C22103A6500E2720B /* Sources */,
+				A8E95F9D22103A6500E2720B /* Frameworks */,
+				A8E95F9E22103A6500E2720B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8E95FA222103A6500E2720B /* PBXTargetDependency */,
+			);
+			name = ZoloAssignmentUITests;
+			productName = ZoloAssignmentUITests;
+			productReference = A8E95FA022103A6500E2720B /* ZoloAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8E95F7922103A6400E2720B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Mayank;
+				TargetAttributes = {
+					A8E95F8022103A6400E2720B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A8E95F9422103A6400E2720B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A8E95F8022103A6400E2720B;
+					};
+					A8E95F9F22103A6500E2720B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A8E95F8022103A6400E2720B;
+					};
+				};
+			};
+			buildConfigurationList = A8E95F7C22103A6400E2720B /* Build configuration list for PBXProject "ZoloAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8E95F7822103A6400E2720B;
+			productRefGroup = A8E95F8222103A6400E2720B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8E95F8022103A6400E2720B /* ZoloAssignment */,
+				A8E95F9422103A6400E2720B /* ZoloAssignmentTests */,
+				A8E95F9F22103A6500E2720B /* ZoloAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8E95F7F22103A6400E2720B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E95F8F22103A6400E2720B /* LaunchScreen.storyboard in Resources */,
+				A8E95F8C22103A6400E2720B /* Assets.xcassets in Resources */,
+				A8E95F8A22103A6400E2720B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E95F9322103A6400E2720B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E95F9E22103A6500E2720B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8E95F7D22103A6400E2720B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E95F8722103A6400E2720B /* ViewController.swift in Sources */,
+				A8E95F8522103A6400E2720B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E95F9122103A6400E2720B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E95F9A22103A6400E2720B /* ZoloAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E95F9C22103A6500E2720B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E95FA522103A6500E2720B /* ZoloAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8E95F9722103A6400E2720B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8E95F8022103A6400E2720B /* ZoloAssignment */;
+			targetProxy = A8E95F9622103A6400E2720B /* PBXContainerItemProxy */;
+		};
+		A8E95FA222103A6500E2720B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8E95F8022103A6400E2720B /* ZoloAssignment */;
+			targetProxy = A8E95FA122103A6500E2720B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8E95F8822103A6400E2720B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E95F8922103A6400E2720B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8E95F8D22103A6400E2720B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E95F8E22103A6400E2720B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8E95FA722103A6500E2720B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8E95FA822103A6500E2720B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8E95FAA22103A6500E2720B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZoloAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MayankApps.ZoloAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8E95FAB22103A6500E2720B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZoloAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MayankApps.ZoloAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8E95FAD22103A6500E2720B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZoloAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MayankApps.ZoloAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZoloAssignment.app/ZoloAssignment";
+			};
+			name = Debug;
+		};
+		A8E95FAE22103A6500E2720B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZoloAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MayankApps.ZoloAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZoloAssignment.app/ZoloAssignment";
+			};
+			name = Release;
+		};
+		A8E95FB022103A6500E2720B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZoloAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MayankApps.ZoloAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZoloAssignment;
+			};
+			name = Debug;
+		};
+		A8E95FB122103A6500E2720B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZoloAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MayankApps.ZoloAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZoloAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8E95F7C22103A6400E2720B /* Build configuration list for PBXProject "ZoloAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E95FA722103A6500E2720B /* Debug */,
+				A8E95FA822103A6500E2720B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E95FA922103A6500E2720B /* Build configuration list for PBXNativeTarget "ZoloAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E95FAA22103A6500E2720B /* Debug */,
+				A8E95FAB22103A6500E2720B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E95FAC22103A6500E2720B /* Build configuration list for PBXNativeTarget "ZoloAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E95FAD22103A6500E2720B /* Debug */,
+				A8E95FAE22103A6500E2720B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E95FAF22103A6500E2720B /* Build configuration list for PBXNativeTarget "ZoloAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E95FB022103A6500E2720B /* Debug */,
+				A8E95FB122103A6500E2720B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8E95F7922103A6400E2720B /* Project object */;
+}
