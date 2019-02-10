@@ -13,6 +13,7 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var headerCollectionView: UICollectionView!
     @IBOutlet weak var primaryCollectionView: UICollectionView!
     private var headerData = [DataModel]()
+    private var primaryData = [DataModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
         headerCollectionView.delegate = self
         headerCollectionView.dataSource = self
         let layout = UICollectionViewFlowLayout()
-        layout.minimumInteritemSpacing = 0
+        layout.minimumInteritemSpacing = 5
         layout.scrollDirection = .horizontal
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.itemSize = CGSize(width: UIScreen.main.bounds.width*(3/4) , height: headerCollectionView.frame.size.height)
@@ -44,7 +45,7 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
         primaryCollectionView.delegate = self
         primaryCollectionView.dataSource = self
         let layout = UICollectionViewFlowLayout()
-        layout.minimumInteritemSpacing = 0
+        layout.minimumInteritemSpacing = 5
         layout.scrollDirection = .horizontal
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.itemSize = CGSize(width: UIScreen.main.bounds.width*0.4 , height: primaryCollectionView.frame.size.height)
@@ -52,6 +53,10 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
         DataModel.getData(withUrl: "https://jsonplaceholder.typicode.com/posts") { [weak self] data in
             guard let strongSelf = self else {
                 return
+            }
+            strongSelf.primaryData = data
+            DispatchQueue.main.async {
+                strongSelf.primaryCollectionView.reloadData()
             }
         }
     }
@@ -61,7 +66,7 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
             return headerData.count
         }
         else {
-            return 0
+            return primaryData.count
         }
     }
     
@@ -74,7 +79,16 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
             return headerCell
         }
         else {
-            return UICollectionViewCell()
+            let primaryCell = primaryCollectionView.dequeueReusableCell(withReuseIdentifier: "PrimaryCollectionViewCell", for: indexPath) as! PrimaryCollectionViewCell
+            if let body = primaryData[indexPath.item].body {
+                primaryCell.textLabel.text = body
+            }
+            DataModel.getImage(fromUrl: "https://homepages.cae.wisc.edu/~ece533/images/watch.png") { image in
+                DispatchQueue.main.async {
+                    primaryCell.imageView.image = image
+                }
+            }
+            return primaryCell
         }
     }
     

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import  UIKit
 class DataModel: NSObject {
     
     var userId: Int?
@@ -55,6 +55,19 @@ class DataModel: NSObject {
                 }
             }
             task.resume()
+        }
+    }
+    
+    static func getImage(fromUrl url: String, completion: @escaping (UIImage) -> ()) {
+        if let url = URL(string: url) {
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                if error != nil {
+                    return
+                }
+                if let data = data, let image = UIImage(data: data) {
+                    completion(image)
+                }
+            }.resume()
         }
     }
 }
