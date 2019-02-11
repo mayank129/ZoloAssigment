@@ -32,7 +32,7 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.itemSize = CGSize(width: UIScreen.main.bounds.width*(3/4) , height: headerCollectionView.frame.size.height)
         headerCollectionView.collectionViewLayout = layout
-        DataModel.getData(withUrl: "https://jsonplaceholder.typicode.com/todos") { [weak self] data in
+        ServerRequest.shareInstance.getData(withUrl: "https://jsonplaceholder.typicode.com/todos") { [weak self] data in
             guard let strongSelf = self else {
                 return
             }
@@ -52,7 +52,7 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.itemSize = CGSize(width: UIScreen.main.bounds.width*0.4 , height: primaryCollectionView.frame.size.height)
         primaryCollectionView.collectionViewLayout = layout
-        DataModel.getData(withUrl: "https://jsonplaceholder.typicode.com/posts") { [weak self] data in
+        ServerRequest.shareInstance.getData(withUrl: "https://jsonplaceholder.typicode.com/posts") { [weak self] data in
             guard let strongSelf = self else {
                 return
             }
@@ -85,7 +85,7 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
             if let body = primaryData[indexPath.item].body {
                 primaryCell.textLabel.text = body
             }
-            DataModel.getImage(fromUrl: imageUrl) { image in
+            ServerRequest.shareInstance.getImage(fromUrl: imageUrl) { image in
                 DispatchQueue.main.async {
                     primaryCell.imageView.image = image
                 }

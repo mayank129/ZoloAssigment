@@ -33,7 +33,7 @@ class ImageDetailViewController: UIViewController {
         if let title = data?.title, let body = data?.body, let imageURL = mainImageURL {
             titleLabel.text = title
             bodyLabel.text = body
-            DataModel.getImage(fromUrl: imageURL) { image in
+            ServerRequest.shareInstance.getImage(fromUrl: imageURL) { image in
                 DispatchQueue.main.async {
                     self.imageView.image = image
                 }
