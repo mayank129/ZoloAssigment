@@ -58,16 +58,22 @@ class DataModel: NSObject {
         }
     }
     
-    static func getImage(fromUrl url: String, completion: @escaping (UIImage) -> ()) {
-        if let url = URL(string: url) {
-            URLSession.shared.dataTask(with: url) { data, response, error in
-                if error != nil {
-                    return
-                }
-                if let data = data, let image = UIImage(data: data) {
-                    completion(image)
-                }
-            }.resume()
+    static func getImage(fromUrl urlStringurl: String, completion: @escaping (UIImage) -> ()) {
+        if let image = imageCache.getImge(forKey: urlStringurl) {
+            completion(image)
+        }
+        else {
+            if let url = URL(string: urlStringurl) {
+                URLSession.shared.dataTask(with: url) { data, response, error in
+                    if error != nil {
+                        return
+                    }
+                    if let data = data, let image = UIImage(data: data) {
+                        imageCache.addImage(image, key: urlStringurl)
+                        completion(image)
+                    }
+                    }.resume()
+            }
         }
     }
 }

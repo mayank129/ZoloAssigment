@@ -12,4 +12,8 @@ class HeaderCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var textLabel: UILabel!
     
+    override func prepareForReuse() {
+        textLabel.text = nil
+    }
+    
 }

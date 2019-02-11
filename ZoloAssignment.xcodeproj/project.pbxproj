@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A82BEE822211835A00694C75 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82BEE812211835A00694C75 /* ImageDetailViewController.swift */; };
+		A82BEE842211A99A00694C75 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82BEE832211A99A00694C75 /* ImageCache.swift */; };
 		A8E95F8522103A6400E2720B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E95F8422103A6400E2720B /* AppDelegate.swift */; };
 		A8E95F8A22103A6400E2720B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E95F8822103A6400E2720B /* Main.storyboard */; };
 		A8E95F8C22103A6400E2720B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E95F8B22103A6400E2720B /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		A82BEE812211835A00694C75 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		A82BEE832211A99A00694C75 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		A8E95F8122103A6400E2720B /* ZoloAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoloAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E95F8422103A6400E2720B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8E95F8922103A6400E2720B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				A8E95FB42210427F00E2720B /* DataModel.swift */,
+				A82BEE832211A99A00694C75 /* ImageCache.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				A8E95FBD2210705700E2720B /* PrimaryCollectionViewCell.swift in Sources */,
 				A8E95FB82210655800E2720B /* DataViewController.swift in Sources */,
 				A8E95FBB22106EDC00E2720B /* HeaderCollectionViewCell.swift in Sources */,
+				A82BEE842211A99A00694C75 /* ImageCache.swift in Sources */,
 				A8E95F8522103A6400E2720B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

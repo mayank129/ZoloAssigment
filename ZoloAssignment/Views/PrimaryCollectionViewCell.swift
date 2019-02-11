@@ -12,4 +12,8 @@ class PrimaryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textLabel: UILabel!
     
+    override func prepareForReuse() {
+        imageView.image = nil
+        textLabel.text = nil
+    }
 }
