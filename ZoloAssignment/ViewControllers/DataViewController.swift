@@ -15,6 +15,7 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
     private var headerData = [DataModel]()
     private var primaryData = [DataModel]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupHeaderCollectionView()
@@ -89,6 +90,13 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 }
             }
             return primaryCell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == primaryCollectionView {
+            let imageDetailVc = ImageDetailViewController.viewController(with: primaryData[indexPath.item])
+            navigationController?.pushViewController(imageDetailVc, animated: true)
         }
     }
     
