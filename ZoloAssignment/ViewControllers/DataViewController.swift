@@ -14,7 +14,6 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var primaryCollectionView: UICollectionView!
     private var headerData = [DataModel]()
     private var primaryData = [DataModel]()
-    var imageArray = [UIImage]()
     let imageUrl = "https://homepages.cae.wisc.edu/~ece533/images/watch.png"
     
     
@@ -89,10 +88,6 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
             DataModel.getImage(fromUrl: imageUrl) { image in
                 DispatchQueue.main.async {
                     primaryCell.imageView.image = image
-                    while self.imageArray.count <= indexPath.item {
-                        self.imageArray.append(UIImage())
-                    }
-                    self.imageArray.insert(image, at: indexPath.item)
                 }
             }
             return primaryCell
@@ -101,7 +96,7 @@ class DataViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == primaryCollectionView {
-            let imageDetailVc = ImageDetailViewController.viewController(with: primaryData[indexPath.item], image: imageArray[indexPath.item])
+            let imageDetailVc = ImageDetailViewController.viewController(with: primaryData[indexPath.item], image: imageUrl)
             navigationController?.pushViewController(imageDetailVc, animated: true)
         }
     }

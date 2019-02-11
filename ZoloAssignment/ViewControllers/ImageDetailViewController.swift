@@ -14,13 +14,13 @@ class ImageDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
     private var data: DataModel?
-    private var mainImage: UIImage?
+    private var mainImageURL: String?
     
-    static func viewController(with data: DataModel, image: UIImage) -> UIViewController {
+    static func viewController(with data: DataModel, image: String) -> UIViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let imageDetailVc = storyBoard.instantiateViewController(withIdentifier: "imageDetailVc") as! ImageDetailViewController
         imageDetailVc.data = data
-        imageDetailVc.mainImage = image
+        imageDetailVc.mainImageURL = image
         return imageDetailVc
     }
     
@@ -30,10 +30,14 @@ class ImageDetailViewController: UIViewController {
     }
     
     private func setupUI() {
-        if let title = data?.title, let body = data?.body, let mainImage = mainImage {
+        if let title = data?.title, let body = data?.body, let imageURL = mainImageURL {
             titleLabel.text = title
             bodyLabel.text = body
-            imageView.image = mainImage
+            DataModel.getImage(fromUrl: imageURL) { image in
+                DispatchQueue.main.async {
+                    self.imageView.image = image
+                }
+            }
         }
     }
     
